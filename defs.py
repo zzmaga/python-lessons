@@ -1,4 +1,4 @@
-// Convert a Number to a String
+# Convert a Number to a String
 def number_to_string(num): return str(num)
 '''
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
@@ -14,8 +14,8 @@ def number_to_string(num): return str(num)
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡘⣿⣿⣿⣿⣿⣿⣿⣿⡇⣼⣿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⢸⣿⣿⣿⣿⣿⣿⣿⠁⣿⣿⣿⣿⣿⣿⣿⣿⣿
 '''
---------------------------------------------------------------------------------------------
-// 1 var
+# --------------------------------------------------------------------------------------------
+# 1 var
 def positive_sum(arr):
     i = 0
     total = 0
@@ -26,7 +26,7 @@ def positive_sum(arr):
 
     return total
 
-// 2 var
+# 2 var
 def positive_sum(arr):
     total = 0
     for x in arr:
@@ -34,27 +34,27 @@ def positive_sum(arr):
             total += x
     return total
 
-// 3 var
+# 3 var
 def positive_sum(arr):
     return sum(x for x in arr if x > 0)
 
---------------------------------------------------------------------------------------------
-// Simple multiplication
-// This kata is about multiplying a given number by eight if it is an even number and by nine otherwise
+#--------------------------------------------------------------------------------------------
+# Simple multiplication
+# This kata is about multiplying a given number by eight if it is an even number and by nine otherwise
     
-// var 1
+# var 1
 def simple_multiplication(number) :
     return number * 9 if number % 2 else number * 8 // number % 2 == 1 (True) number %2 == 0 (False)
 
-// var 2
+# var 2
 def simple_multiplication(n):
     return n * (8 + n % 2) // n % 2 == 0 (8+0), n % 2 == 1 (8+1)
 
-// var 3
+# var 3
 def simple_multiplication(number):
     return number * 8 if number % 2 == 0 else number * 9
 
---------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
 """ You are given the length and width of a 4-sided polygon. The polygon can either be a rectangle or a square.
 If it is a square, return its area. If it is a rectangle, return its perimeter.
 
@@ -67,4 +67,4 @@ Note: for the purposes of this kata you will assume that it is a square if its l
 def area_or_perimeter(l, w):
     return l * w if l == w else (l + w) * 2
 
---------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
